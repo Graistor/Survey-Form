@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Videogames Survey</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./styles.css" />
+   </head>
+   <body>
+      <h1 id="title">Videogames Preferences Survey</h1>
+      <p id="description" class="subtitle">
+         Let us choose your next play for you!
+      </p>
+
+      <form action="#" id="survey-form">
+         <!--Basic Information-->
+         <fieldset class="basic-info">
+            <!--Name-->
+            <label for="name" id="name-label">Name</label>
+            <input
+               type="text"
+               class="info"
+               id="name"
+               placeholder="Enter your name"
+               required
+            />
+            <!--Email-->
+            <label for="email" id="email-label"> Email</label>
+            <input
+               type="email"
+               class="info"
+               id="email"
+               placeholder="Enter your Email"
+               required
+            />
+            <!--Age-->
+            <label for="number" id="number-label">Age (optional)</label>
+            <input
+               type="number"
+               class="info"
+               id="number"
+               pattern="[0-9]"
+               min="10"
+               max="120"
+               placeholder="Age"
+            />
+            <!--Genre-->
+            <label for="dropdown">
+               What is your favorite videogame Genre?</label
+            >
+            <select name="" id="dropdown" class="info">
+               <option value="">Choose the genre</option>
+               <option value="1">Shooters</option>
+               <option value="2">Racing Games</option>
+               <option value="3">Survival games</option>
+               <option value="4">Strategy Games</option>
+               <option value="5">RPG Games</option>
+            </select>
+         </fieldset>
+
+         <!--Radio bottoms-->
+         <fieldset>
+            <label>Do you like multiplayer games?</label>
+            <br />
+            <label for=""
+               ><input name="multiplayer" type="radio" checked />
+               Sometimes</label
+            ><br />
+            <label for=""><input name="multiplayer" type="radio" /> Yes</label
+            ><br />
+            <label for=""><input name="multiplayer" type="radio" /> No</label>
+         </fieldset>
+
+         <!--Games Played-->
+         <fieldset>
+            <label>What of these referent games have you played?</label>
+            <div>
+               <input type="checkbox" id="gta5" /><label for="gta5">
+                  Grand Theft Auto 5</label
+               >
+            </div>
+            <div>
+               <input type="checkbox" id="minecraft" /><label for="minecraft">
+                  Minecraft</label
+               >
+            </div>
+            <div>
+               <input type="checkbox" id="pokemon" /><label for="pokemon">
+                  Pokemon</label
+               >
+            </div>
+            <div>
+               <input type="checkbox" id="forza" /><label for="forza">
+                  Forza Horizon</label
+               >
+            </div>
+            <div>
+               <input type="checkbox" id="re" /><label for="re">
+                  Resident Evil</label
+               >
+            </div>
+            <div>
+               <input type="checkbox" id="sh" /><label for="sh">
+                  Silent Hill</label
+               >
+            </div>
+            <div>
+               <input type="checkbox" id="cod" /><label for="cod">
+                  Call Of Duty</label
+               >
+            </div>
+         </fieldset>
+
+         <!--Comments-->
+         <fieldset>
+            <label for="comments">Any comments about the survey?</label>
+            <br />
+            <textarea
+               name=""
+               id="comments"
+               placeholder="The comments go here"
+            ></textarea>
+         </fieldset>
+         <input type="submit" value="Submit" />
+      </form>
+   </body>
+</html>
